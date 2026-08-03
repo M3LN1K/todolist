@@ -1,0 +1,38 @@
+# Файлы и папки, которые обычно не нужно версионировать
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+*.sql
+/*.html
+/upload/
+/logs/
+/robots.txt
+/.htaccess
+/sitemap*.xml
+.osp/
+
+# Ядро Битрикс — его обычно не хранят в репозитории из-за объёма
+/bitrix/
+
+# Конкретные подпапки внутри bitrix, которые точно можно исключить
+/bitrix/cache/
+/bitrix/managed_cache/
+/bitrix/stack_cache/
+/bitrix/html_pages/
+/bitrix/resize_cache/
+/bitrix/modules/
+/bitrix/components/
+/bitrix/js/
+/bitrix/css/
+/bitrix/images/
+/bitrix/admin/
+/bitrix/backup/
+/bitrix/themes/
+/bitrix/wizards/
+
+# Файлы с настройками, которые зависят от окружения (сервер, БД)
+/bitrix/.settings.php
+/bitrix/php_interface/dbconn.php
+/bitrix/php_interface/include/sale_payment/
+/bitrix/php_interface/include/sale_delivery/
